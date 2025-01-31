@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #bdb1ca, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden; /* Remove o rolamento */
+}
+
+/* efeito vidro */
+.container {
+    background: rgba(23, 154, 194, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Inputs e botões */
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Fundo Inputs e selects */
+input, select {
+    background: rgba(255, 255, 255, 0.1);
+    color: #5f5179;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Placeholder visível */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilização do botão */
+button {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: rgb(91, 82, 132);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.05);
+}
+
+#resultado {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #2e291f;
+    text-shadow: 1px 1px 2px #000, 0 0 5px #ffd700;
+    margin-top: 20px;
+}
+
+/* Estiliza o título */
+.titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFA500;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+}
+
+/* Estiliza o rodapé */
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estiliza o nome no rodapé */
+.destaque {
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 1px 1px 3px #000;
+    display: block;
+    text-align: center;
+}
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+
