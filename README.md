@@ -32,4 +32,4 @@ Você pode acessar o projeto online [ahttps://tatianakami.github.io/conversor-mo
 ├── assets/ # Pasta para assets (imagens, ícones, etc.)
 │ └── image/ # Pasta para imagens
 │ └── conversor-moeda.png # Imagem de preview do projeto
-└── preview.png # Imagem de preview do projeto (alternativa)
+
