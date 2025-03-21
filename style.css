@@ -1,121 +1,125 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* corpo da página */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #bdb1ca, #2575fc);
-    color: #fff;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente moderno */
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    overflow: hidden; /* Remove o rolamento */
+    height: 100vh;
+    margin: 0;
 }
 
-/* efeito vidro */
-.container {
-    background: rgba(23, 154, 194, 0.1);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 30px;
-    width: 100%;
+.wrapper {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px; /* Bordas mais arredondadas */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
     max-width: 400px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    width: 100%;
 }
 
-/* Inputs e botões */
-input, select, button {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
+.titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; /* Espaçamento  */
+}
+
+label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.input-valor {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    border: none;
     font-size: 1rem;
     outline: none;
-    transition: 0.3s;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Largura total */
 }
 
-/* Fundo Inputs e selects */
-input, select {
-    background: rgba(255, 255, 255, 0.1);
-    color: #5f5179;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+.input-valor:focus {
+    border-color: #6c63ff;
 }
 
-/* Placeholder visível */
-input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/* Estilização do botão */
-button {
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
-    color: rgb(91, 82, 132);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    transform: scale(1.05);
-}
-
-#resultado {
-    font-size: 2rem;
-    font-weight: 300;
-    color: #2e291f;
-    text-shadow: 1px 1px 2px #000, 0 0 5px #ffd700;
-    margin-top: 20px;
-}
-
-/* Estiliza o título */
-.titulo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    color: #FFA500;
-    text-shadow: 2px 2px 4px #000;
-    margin-bottom: 20px;
-}
-
-/* Estiliza o rodapé */
-footer {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 300;
+.select-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 0.5rem;
+    width: 100%; /* Largura total */
 }
 
-/* Estiliza o nome no rodapé */
-.destaque {
-    font-weight: bold;
-    color: #FFD700;
-    text-shadow: 1px 1px 3px #000;
-    display: block;
+.select-moeda {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    flex: 1;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Largura total */
+}
+
+.select-moeda:focus {
+    border-color: #6c63ff;
+}
+
+.seta {
+    font-size: 1.2rem;
+    color: #6c63ff;
+}
+
+.botao-converter {
+    padding: 0.8rem;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Largura total */
+}
+
+.botao-converter:hover {
+    background-color: #5a52e0;
+}
+
+.resultado {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1a1a1a;
     text-align: center;
+    margin-top: 1rem;
 }
-@media (max-width: 480px) {
-    .titulo {
-        font-size: 2rem;
-    }
 
-    .container {
-        padding: 20px;
-    }
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.destaque {
+    color: #6c63ff;
+    font-weight: 500;
 }
 
 
