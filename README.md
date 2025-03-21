@@ -1,4 +1,4 @@
-# Conversor de Moedas 💰
+ Conversor de Moedas 💰
 
 ![Preview do Projeto](./assets/image/conversor-moeda.png) 
 
@@ -25,11 +25,11 @@ Você pode acessar o projeto online [ahttps://tatianakami.github.io/conversor-mo
 
  📁 Estrutura do Projeto
  conversor-moedas/
-├── index.html # Página principal do projeto
-├── style.css # Estilos do projeto
-├── script.js # Lógica de conversão de moedas
-├── README.md # Documentação do projeto
-├── assets/ # Pasta para assets (imagens, ícones, etc.)
-│ └── image/ # Pasta para imagens
-│ └── conversor-moeda.png # Imagem de preview do projeto
+├── index.html 
+├── style.css
+├── script.js 
+├── README.md 
+├── assets
+│ └── image
+│ └── conversor-moeda.png 
 
