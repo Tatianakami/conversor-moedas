@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Conversor de Moedas</title>
 </head>
 
@@ -13,20 +14,22 @@
 
         <div class="container">
             <label for="valor">Valor:</label>
-            <input type="number" id="valor" placeholder="Digite o valor" />
-            <select id="moedaOrigem">
-                <option value="USD">Dólar Americano (USD)</option>
-                <option value="BRL">Real Brasileiro (BRL)</option>
-                <option value="EUR">Euro (EUR)</option>
-            </select>
-            <span>para</span>
-            <select id="moedaDestino">
-                <option value="BRL">Real Brasileiro (BRL)</option>
-                <option value="USD">Dólar Americano (USD)</option>
-                <option value="EUR">Euro (EUR)</option>
-            </select>
-            <button onclick="converterMoedas()">Converter</button>
-            <h2 id="resultado"></h2>
+            <input type="number" id="valor" placeholder="Digite o valor" class="input-valor" />
+            <div class="select-container">
+                <select id="moedaOrigem" class="select-moeda">
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                </select>
+                <span class="seta">➔</span>
+                <select id="moedaDestino" class="select-moeda">
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                </select>
+            </div>
+            <button onclick="converterMoedas()" class="botao-converter">Converter</button>
+            <h2 id="resultado" class="resultado"></h2>
         </div>
 
         <!-- Rodapé abaixo da caixa -->
